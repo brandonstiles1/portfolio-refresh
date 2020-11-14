@@ -5,6 +5,7 @@ type QueryResponse = {
   contentfulAbout: {
     name: string;
     roles: string[];
+    description: string;
     socialLinks: SocialLink[];
   };
   site: {

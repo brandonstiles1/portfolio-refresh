@@ -21,7 +21,7 @@ const LandingPage = () => {
         as="h1"
         color="primary"
         fontSize={[6, 7]}
-        mb={[3, 4, 5]}
+        mb={4}
       >
         {`Hello, I'm ${name}`}
       </Heading>
@@ -30,29 +30,11 @@ const LandingPage = () => {
         as="h3"
         color="secondary"
         fontSize={[3, 4]}
-        mb={[3, 5]}
+        mb={3}
         textAlign="left"
-        // style={centerHorizontally}
       >
         {description}
-        {/* <TextLoop interval={5000}>
-          {roles
-            .sort(() => (deterministic ? 1 : Math.random() - 0.5))
-            .map((text) => (
-              <Text width={[300, 500]} key={text}>
-                {text}
-              </Text>
-            ))}
-        </TextLoop> */}
       </Heading>
-
-      <Flex alignItems="left" justifyContent="left" flexWrap="wrap">
-        {socialLinks.map((sl) => (
-          <Box mx={3} fontSize={[5, 6, 6]} key={sl.name}>
-            <SocialLink {...sl} />
-          </Box>
-        ))}
-      </Flex>
 
       <MouseIcon onClick={aboutSection.onClick} />
     </Section.Container>
