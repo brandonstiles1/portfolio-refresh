@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
-import { ScrollingProvider } from 'react-scroll-section';
+// import { ScrollingProvider } from 'react-scroll-section';
 import Helmet from './Helmet';
 import theme from '../theme';
 import { loadIcons } from '../utils/icon-loader';
@@ -35,10 +35,10 @@ const Layout = ({ children }: Props) => (
   <main>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <ScrollingProvider>
+      {/* <ScrollingProvider> */}
         <Helmet />
         {children}
-      </ScrollingProvider>
+      {/* </ScrollingProvider> */}
     </ThemeProvider>
   </main>
 );

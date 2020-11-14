@@ -20,7 +20,7 @@ const LandingPage = () => {
         textAlign="left"
         as="h1"
         color="primary"
-        fontSize={[6, 7]}
+        fontSize={6}
         mb={4}
         fontWeight={400}
         >
@@ -34,6 +34,8 @@ const LandingPage = () => {
         mb={3}
         textAlign="left"
         fontWeight={400}
+        width='40vw'
+        lineHeight='2.2rem'
       >
         {description}
       </Heading>
