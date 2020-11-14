@@ -15,14 +15,15 @@ const LandingPage = () => {
   const aboutSection = useScrollSection('about');
 
   return (
-    <Section.Container id="home" Background={Background}>
+    <Section.Container id="home">
       <Heading
         textAlign="left"
         as="h1"
         color="primary"
         fontSize={[6, 7]}
         mb={4}
-      >
+        fontWeight={400}
+        >
         {`Hello, I'm ${name}`}
       </Heading>
 
@@ -32,6 +33,7 @@ const LandingPage = () => {
         fontSize={[3, 4]}
         mb={3}
         textAlign="left"
+        fontWeight={400}
       >
         {description}
       </Heading>

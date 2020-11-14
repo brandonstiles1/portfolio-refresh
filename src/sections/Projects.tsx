@@ -10,7 +10,7 @@ const Projects = () => {
   const projects = useProjectsQuery();
 
   return (
-    <Section.Container id="projects" Background={Background}>
+    <Section.Container id="projects">
       <Section.Header name="Projects" icon="💻" label="notebook" />
 
       <CardContainer minWidth="350px">

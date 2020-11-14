@@ -53,7 +53,7 @@ const Header = ({ name, icon, label }: HeaderProps) => (
 const SectionContainer = styled.div`
   min-height: 100vh;
   min-width: 320px;
-  max-width: 1366px;
+  max-width: 80vw;
   display: flex;
   margin: auto;
   flex: 0 1 auto;

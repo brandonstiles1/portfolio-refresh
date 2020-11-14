@@ -12,7 +12,7 @@ const About = () => {
   const { markdown, profile } = useAboutMeQuery();
 
   return (
-    <Section.Container id="about" Background={Background}>
+    <Section.Container id="about">
       <Section.Header name="About me" icon="🙋‍♂️" label="person" />
       <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
         <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]} mt={2}>

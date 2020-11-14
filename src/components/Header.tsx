@@ -67,7 +67,10 @@ const StyledHeadroom = styled(Headroom)`
   }
 
   position: absolute;
-  width: 100%;
+  width: 80vw;
+  margin: auto;
+  left: 0;
+  right: 0;
 `;
 
 export default Header;

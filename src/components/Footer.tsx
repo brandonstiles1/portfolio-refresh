@@ -15,15 +15,7 @@ const Footer = () => {
       <FooterContainer>
         <Fade direction="left" triggerOnce>
           <TextWrapper fontSize={[2, 3]}>
-            <span>{`${name} Portfolio - Powered by `}</span>
-            <Link href={GATSBY_URL}>Gatsby</Link>
-            <span>, </span>
-            <Link href={CONTENTFUL_URL}>Contentful</Link>
-            <span> and </span>
-            <Link href={NETLIFY_URL}>Netlify</Link>{' '}
-            <span role="img" aria-label="heart">
-              ❤️
-            </span>
+            
           </TextWrapper>
         </Fade>
         <Flex>
@@ -41,7 +33,7 @@ const Footer = () => {
 };
 
 const FooterContainer = styled.div`
-  max-width: 1366px;
+  max-width: 80vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

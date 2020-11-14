@@ -35,7 +35,7 @@ const theme: Theme = {
     },
   },
   fonts: {
-    body: 'Helvetica, sans-serif',
+    body: 'Noto Sans JP, sans-serif',
     heading: 'inherit',
     monospace: 'monospace',
   },

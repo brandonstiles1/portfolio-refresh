@@ -10,7 +10,7 @@ const Writing = () => {
   const { posts } = useMediumQuery();
 
   return (
-    <Section.Container id="writing" Background={Background}>
+    <Section.Container id="writing">
       <Section.Header name="Writing" icon="✍️" label="writing" />
       <CardContainer minWidth="300px">
         <Fade direction="down" triggerOnce cascade damping={0.5}>
