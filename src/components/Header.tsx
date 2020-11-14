@@ -4,6 +4,7 @@ import { Box, Button, Flex, Image } from 'rebass/styled-components';
 import styled from 'styled-components';
 import { useScrollSection, useScrollSections } from 'react-scroll-section';
 import Link from './Link';
+import Logo from '../assets/Logo.svg';
 import { capitalize } from '../utils/string';
 import { useHelmetQuery } from '../queries/useHelmetQuery';
 
@@ -43,7 +44,8 @@ const HomeLink = () => {
     <Button onClick={onClick} variant="empty">
       <Flex justifyContent="center">
         <Image
-          src={profile.bigIcon.src}
+          // src={profile.bigIcon.src}
+          src={Logo}
           height={['60px', '80px']}
           width={['60px', '80px']}
           alt="Portfolio Logo"

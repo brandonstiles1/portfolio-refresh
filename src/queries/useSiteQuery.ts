@@ -20,6 +20,7 @@ export const useSiteQuery = (): Landing & { deterministic: boolean } => {
       contentfulAbout {
         name
         roles
+        description
         socialLinks {
           url
           name

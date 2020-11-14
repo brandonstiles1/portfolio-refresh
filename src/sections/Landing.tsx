@@ -11,30 +11,31 @@ import { useSiteQuery } from '../queries/useSiteQuery';
 const centerHorizontally = { marginRight: 'auto', marginLeft: 'auto' };
 
 const LandingPage = () => {
-  const { name, roles, socialLinks, deterministic } = useSiteQuery();
+  const { name, roles, description, socialLinks, deterministic } = useSiteQuery();
   const aboutSection = useScrollSection('about');
 
   return (
     <Section.Container id="home" Background={Background}>
       <Heading
-        textAlign="center"
+        textAlign="left"
         as="h1"
         color="primary"
         fontSize={[6, 7]}
         mb={[3, 4, 5]}
       >
-        {`Hello, I'm ${name}!`}
+        {`Hello, I'm ${name}`}
       </Heading>
 
       <Heading
-        as="h2"
-        color="primary"
-        fontSize={[5, 6]}
+        as="h3"
+        color="secondary"
+        fontSize={[3, 4]}
         mb={[3, 5]}
-        textAlign="center"
-        style={centerHorizontally}
+        textAlign="left"
+        // style={centerHorizontally}
       >
-        <TextLoop interval={5000}>
+        {description}
+        {/* <TextLoop interval={5000}>
           {roles
             .sort(() => (deterministic ? 1 : Math.random() - 0.5))
             .map((text) => (
@@ -42,10 +43,10 @@ const LandingPage = () => {
                 {text}
               </Text>
             ))}
-        </TextLoop>
+        </TextLoop> */}
       </Heading>
 
-      <Flex alignItems="center" justifyContent="center" flexWrap="wrap">
+      <Flex alignItems="left" justifyContent="left" flexWrap="wrap">
         {socialLinks.map((sl) => (
           <Box mx={3} fontSize={[5, 6, 6]} key={sl.name}>
             <SocialLink {...sl} />
@@ -60,25 +61,6 @@ const LandingPage = () => {
 
 const Background = () => (
   <>
-    <Triangle
-      color="muted"
-      height={['35vh', '80vh']}
-      width={['95vw', '60vw']}
-    />
-
-    <Triangle
-      color="secondary"
-      height={['38vh', '80vh']}
-      width={['50vw', '35vw']}
-    />
-
-    <Triangle
-      color="primary"
-      height={['25vh', '35vh']}
-      width={['75vw', '60vw']}
-      position="top-right"
-    />
-
     <Triangle
       color="muted"
       height={['20vh', '20vh']}
